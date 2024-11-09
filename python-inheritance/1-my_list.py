@@ -1,10 +1,16 @@
 #!/usr/bin/python3
-"""  New class """
+"""
+This module defines a custom list class `MyList`
+that inherits from the built-in list class.
+"""
 
 
 class MyList(list):
-    """ Mylist class that inherist from list """
+    """
+    A custom list class that inherits from the built-in list class.
+    """
 
     def print_sorted(self):
-        """ Function that prints a sorted list """
-        print(sorted(self))
+        copied = self.copy()
+        copied.sort()
+        print(copied)
