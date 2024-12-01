@@ -1,4 +1,6 @@
-cript that lists all states with a name starting with N (upper N)
+#!/usr/bin/python3
+"""
+Script that lists all states with a name starting with N (upper N)
 from the database
 """
 import MySQLdb
@@ -22,4 +24,4 @@ if __name__ == '__main__':
         print(i)
     # Clean up process
     cur.close()
-    db.close()`
+    db.close()
